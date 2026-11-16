@@ -5,7 +5,7 @@ import {mockProducts} from './test/productMokeData';
 export default function Home() {
   return (
     <div className="overflow-x-none items-center flex flex-col flex-1 items-center justify-center bg-background font-sans dark:bg-black">
-      <main className=" w-full h-screen p-3">
+      <main className=" w-full min-h-screen p-3">
         <div style={{ backgroundImage: 'url("/bg1.svg")', backgroundSize: 'cover', backgroundPosition: 'center' }}
           className="relative min-h-100 mt-4 rounded-md p-3">
           <p className="text-[2.5rem] text-background font-bold ">Fruitful<span className="text-accent">marketUg</span></p>
@@ -26,8 +26,8 @@ export default function Home() {
           </div>
         </div>
 
-        {/* productgrid */}
-        <div className=" flex flex-row justify-between mb-2 text-primary">
+        {/* feated productgrid */}
+        <div className="sticky top-[56px] z-40 flex flex-row justify-between mb-2 text-primary">
           <p className=''>featured products</p>
           <button>see all</button>
         </div>

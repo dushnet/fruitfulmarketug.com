@@ -1,5 +1,6 @@
 import {toProductCardData} from '@/app/lib/product/ProductWrapper'
-const mockdata:any[] = [
+import { ProductCardData } from '../components/product/types/product';
+export const mockdata:any[] = [
   {
     "id": "prod-001",
     "name": "Fresh Tomatoes",
@@ -274,7 +275,7 @@ const mockdata:any[] = [
   }
 ]
 
-export const mockProducts:any[] = mockdata.map((product) =>
+export const mockProducts:ProductCardData[] = mockdata.map((product) =>
   toProductCardData(product)
 );
 
